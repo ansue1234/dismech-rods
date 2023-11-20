@@ -77,7 +77,9 @@ For other operating systems you should be able to modify the commands below appr
      ```bash
     git clone https://github.com/danfis/libccd
     cd libccd/src
-    make -j4
+    mkdir build && cd build
+    cmake -G "Unix Makefiles" ..
+    make -j4 
     sudo make install
      ```
   - Next, install FCL from source using the following commands:
